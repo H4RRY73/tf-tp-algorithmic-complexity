@@ -170,6 +170,12 @@ def buscar_objetos_por_lista_binaria(self, lista_binaria):
 
     return buscar_nodos(self.raiz, 0)
 ```
+### Visualizacion
+
+ <a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+    <img src="./foto_grafo.png" width="1200px">
+  </a>
+
 
 ### Bibliografias 
 
