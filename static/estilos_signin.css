@@ -63,3 +63,35 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 80px auto 30px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.btn_opciones{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn_opciones .btn_texto{
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}

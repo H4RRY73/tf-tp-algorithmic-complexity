@@ -3,8 +3,9 @@
 <head>
     <title>Registro</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_signin.css') }}">
+   
 </head>
-<body>
+<body> 
     <h1>Registro</h1>
     <form action="/signin" method="POST" class="signin-form">
         <div class="form-group">
@@ -35,6 +36,23 @@
                 <option value="helicoptero apache">helicoptero apache</option>
             </select>
         </div>
+        <div class="form-group">
+            <label for="intereses">Intereses:</label>
+            <select id="intereses" name="intereses[]" multiple required>                
+                <option value="Deportes">Deportes</option>
+                <option value="Tecnología">Tecnología</option>
+                <option value="Cine">Cine</option>
+                <option value="Música">Música</option>
+                <option value="Viajes">Viajes</option>
+                <option value="Gastronomía">Gastronomía</option>
+                <option value="Arte">Arte</option>
+                <option value="Ciencia">Ciencia</option>
+                <option value="Moda">Moda</option>
+                <option value="Literatura">Literatura</option>
+                <option value="Videojuegos">Videojuegos</option>
+            </select>
+        </div>     
+
         <button type="submit" class="signin-button">Registrarse</button>
     </form>
     {% if error %}

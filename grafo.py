@@ -1,5 +1,6 @@
 # usuarios.py
 import networkx as nx
+from usuario import Usuario
 
 class Grafo:
     def __init__(self):
@@ -17,24 +18,14 @@ class Grafo:
     def obtener_objeto(self, nodo):
         if nodo in self.nodos:
             return self.nodos[nodo]['objeto']
-        else:
+        else:            
             return None
 
-    def obtener_vecinos(self, nodo):
+    def obtener_vecinos(self, nodo):     
+          
         if nodo in self.nodos:
-            return list(self.nodos[nodo]['vecinos'].keys())
-        else:
+            return [self.nodos[vecino]['objeto'] for vecino in self.nodos[nodo]['vecinos']]
+        else:                     
             return []
 
 
-class Usuario:
-    def __init__(self, correo, contraseña, nombres, apellidos, edad, genero):
-        self.correo = correo
-        self.contraseña = contraseña
-        self.nombres = nombres
-        self.apellidos = apellidos
-        self.edad = edad
-        self.genero = genero
-
-    def __str__(self):
-        return self.correo
