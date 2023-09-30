@@ -67,7 +67,7 @@ for registro in data:
 
 
 pos = nx.spring_layout(grafito)
-nx.draw(grafito, pos, with_labels=True, node_size=400, font_size=10, font_color="black")
+nx.draw(grafito, pos, with_labels=True, node_size=10, font_color="black", font_size = 1)
 etiquetas_aristas = nx.get_edge_attributes(grafito, "weight")
 nx.draw_networkx_edge_labels(grafito, pos, edge_labels=etiquetas_aristas)
 plt.show()
