@@ -1,7 +1,11 @@
+import json
+
 from flask import Flask, render_template, request, redirect, url_for, session
 from grafo import Usuario
 from utils import GrafoUsuarios
 from arbol_binario import ArbolBinario
+import networkx as nx
+import matplotlib.pyplot as plt
 import random
 
 app = Flask(__name__)
@@ -45,6 +49,30 @@ arbol.agregar_objeto(usuario1, usuario1.generar_lista_binaria_intereses())
 arbol.agregar_objeto(usuario2, usuario2.generar_lista_binaria_intereses())
 arbol.agregar_objeto(usuario3, usuario3.generar_lista_binaria_intereses())
 arbol.agregar_objeto(usuario4, usuario4.generar_lista_binaria_intereses())
+
+json_file = "persona.json"
+with open(json_file, mode='r') as file:
+    data = json.load(file)
+
+
+nodos_a_mostrar = 100
+grafito = nx.Graph()
+i = 0
+for registro in data:
+    if(i<nodos_a_mostrar):
+        grafito.add_node(registro['ID'])
+        for seguido in registro['seguidosL']:
+            grafito.add_edge(registro['ID'], seguido)
+        i+=1
+
+
+pos = nx.spring_layout(grafito)
+nx.draw(grafito, pos, with_labels=True, node_size=400, font_size=10, font_color="black")
+etiquetas_aristas = nx.get_edge_attributes(grafito, "weight")
+nx.draw_networkx_edge_labels(grafito, pos, edge_labels=etiquetas_aristas)
+plt.show()
+
+
 
 
 @app.route('/')
@@ -120,3 +148,4 @@ def agregar_conexion(correo):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
