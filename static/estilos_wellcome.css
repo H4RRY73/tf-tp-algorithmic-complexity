@@ -1,0 +1,65 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo para la sección de botones */
+.buttons {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Estilos adicionales */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
