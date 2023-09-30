@@ -4,7 +4,7 @@
     <img src="./logo_transparent.png" width="200px">
   </a>
 
-  <h1 align="center">THE SOCIAL DILEMA</h1>
+  <h1 align="center">Quincaille</h1>
 
   <p align="center">
     Peruvian University of Applied Sciences.
@@ -35,22 +35,46 @@ No es sorprendente que ***Stuart Russell***(**2021**), profesor de Inteligencia 
 ### Descripcion del problema
 De manera lógica, podemos inferir que el uso de servicios que emplean algoritmos como los mencionados por Russell no guía a los usuarios hacia una mejora constante, sino que los sumerge en un proceso en el que cada vez destinan más tiempo a consumir contenido, en una dinámica poco saludable.
 
-Como grupo, en relacion a esta situacion,  consideramos que las herramientas no poseen una categoría moral en si mismas, y los juicios de este tipo aplican exclusivamente al uso que se les da.  Por lo tanto, creemos que una red social equipada con algoritmos adecuados para orientar a los usuarios hacia un proceso de mejora continua podría ser una valiosa herramienta para aquellos interesados en mantener una buena higiene digital en su consumo de contenidos.
+Como grupo, consideramos que los algoritmos como cualquier herramienta no poseen una categoría moral en si mismas, siendo que la categoria moral aplica exclusivamente al uso que se les da.  Por lo tanto, creemos que una red social equipada con algoritmos adecuados para orientar a los usuarios hacia un proceso de mejora continua podría ser una valiosa herramienta para aquellos interesados en mantener una buena higiene digital en su consumo de contenidos.
 
 En este sentido, nustro objetivo frente a este problema es crear una una solucion computacional que reconcilie frente al usuario *lo que es* y *lo que quiere ser*.
 
 ## Descripción del conjunto de datos **dataset**
-[TwitterFriends](https://www.kaggle.com/datasets/hwassner/TwitterFriends)
 
-En cuanto a los criterios de selección del conjunto de datos **dataset**, necesitamos que este cumpla con los siguientes requisitos:
+En cuanto a las siguientes criterios de selección del conjunto de datos **dataset**, necesitamos que este cumpla con los siguientes requisitos:
 
-* Lista de Amigos: El dataset debe contener algun tipo de información que realcione 2 usuarios.
+
+* Identificador Unico: Cada usuario debe contar con un identificador unico, ademas de sus respectivas credenciales de incio de sesion.
+
+* Datos basicos : Cada usuario debe contar con datos basicos para la construccion de su perfil. 
+
+* Lista relacional : El dataset debe contener algun tipo de información que realcione 2 usuarios (seguidos, seguidores, amigos, etc.).
 
 * Criterios Parametrizables:  Seria bastante beneficioso **para el cumplimiento de los objetivos** que el dataset incluya criterios parametrizables.
 
 * Mas de 1500 registros: El dataset debe contar con al menos 1500, para asegurar que haya suficientes nodos para simular cierta carga.
 
-Tras una breve busqueda en Kaggle encontramos el dataset [Twitter Friends](https://www.kaggle.com/datasets/hwassner/TwitterFriends). Este dataset cuenta con:
+[Airline Dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset) 
+
+Es un dataet colaborativo que cuenta con diversa informacion sobre pasajeros de aerolines. 
+Creado por Sourav Banerjee (2023) y obtenido mediante Kaggle. Contiene, entre otros campos; nombre
+apellido, genero, edad y nacionalidad.
+
+Para la primera entrega se modifico de la siguiente manera:
+1) Genera un ID unico para cada registro
+2) Almacena el nombre, apellido, genero y edad como cadenas de texto
+2) Genera un correo teniendo como base estos datos
+3) Genera una contrasena numerica pseudoaleatoria
+4) Marca de forma pseudoaleatoria algunos intereses en una binaryList
+5) Por ultimo se genera una lista de seguidos entre los registros existentes
+
+De este modo el archivo ***persona.json*** cuenta con 98, 619 registros.
+
+
+[TwitterFriends](https://www.kaggle.com/datasets/hwassner/TwitterFriends)
+
+
+En la misma plataforma encontramos el dataset [Twitter Friends](https://www.kaggle.com/datasets/hwassner/TwitterFriends). Este dataset cuenta con:
 
 * ID de usuario: Identificador unico para cada usuario. Fungira como identificador de los nodos.
 
@@ -58,16 +82,21 @@ Tras una breve busqueda en Kaggle encontramos el dataset [Twitter Friends](https
 
 * Tiempo desde el ultimo Tweet: Parametrizable tras procesar como actividad del usuario.
 
-* Seguidores: Parametrizable a socializacion. Grado interno del user.
+* Seguidores: Parametrizable a socializacion. Interes generado por el user.
 
-* Seguidos: Parametrizable a socializacion. Grado externo del user.
+* Seguidos: Parametrizable a socializacion. Intereses del user.
 
 Como ultimas ventajas a mencionar, por un lado es la cantidad de registros, contando con 40 000 registros. Por otro lado, la escalabilidad de este dataset al poder ser reemplazado en entregas posteriores por la API de twitter.
 
 Finalmente, reconocer a ***Hubert Wassner*** (**2016**) creador de este dataset mediante la utilizacion de la API pública de Twitter.
 
 ## Propuesta
-Una red social con dos posibilidades de carga de contenido. Primero, carga de contenido de acuerdo a comportamientos del usuario. Segundo, carga de contenido de acuerdo a metas del usuario. 
+Como respuesta a esta problematica se encontrara **Quincalla** una red social con dos posibilidades de carga de contenido.
+El primer tipo de carga de contenido es bastante similar al tradicional donde se buscaria retener el maximo tiempo al usuario
+mediante un contenido disenado de acuerdo a su perfil y comportamientos *(lo que es)*. El segundo tipo de carga seria de 
+acuerdo a las metas o intereses seleccionados por el usuario, donde se rodeara de gente y contenidos de acuerdo a sus 
+propositos u objetivos *(lo que quiere ser)*. Sobra decir que el primer modo es meramente para mostrar al usuario que
+tan lejos o cerca esta de sus objetivos *(su estado actual)*.
 
 ### Objetivo General
 * Nuestro objetivo general es crear una red social que, a través del contenido mostrado y las interacciones realizadas, permita guiar al usuario desde su situación actual hacia la consecución de sus metas y aspiraciones, 
@@ -96,6 +125,8 @@ La metodologia a emplear en este trabajo sera LEAN UX, dada la intensidad, e ite
 
 1. Russell, S.(2021) *Por qué los algoritmos de las redes sociales son cada vez más peligrosos.* BBC News Mundo [Link](https://www.bbc.com/mundo/noticias-58874170 )
 
+1. Banerjee, S (2023). Airline Dataset [link](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset) 
+
 1. Wassner, H.(2016) *TwitterFriends.* [Link](https://www.kaggle.com/datasets/hwassner/TwitterFriends )
 
 1. Villanueva, F. Vizarreta, R.(2022) *Plataforma Web para la Gestión y Despliegue del Contenido Digital del Grupo de Investigación de Métodos Computacionales Aplicado a Nanomateriales de la UNMSM Desarrollado Bajo el Marco Dual-Track Agile.* (tesis de licenciatur, **Universidad de Piura**) [Repositorio Institucional UDEP.](https://pirhua.udep.edu.pe/handle/11042/5619)
@@ -103,3 +134,4 @@ La metodologia a emplear en este trabajo sera LEAN UX, dada la intensidad, e ite
 1. Condor, J. (2022). *Metodología para integrar la Experiencia de Usuario en el desarrollo de sistemas web de una entidad pública.* (tesis de licenciatura, **Universidad Cesar Vallejo**). [Repositorio Institucional de la UCV.](https://repositorio.ucv.edu.pe/bitstream/handle/20.500.12692/85437/Condor_FJG-SD.pdf?sequence=1&isAllowed=y)
 
 1. Canaval, L. (2023). Sesión de clase - recording_2 - 15/08/2023 10:53:17 (**Blackboard**). [Blackboard](https://upc-download.obs.la-south-2.myhuaweicloud.com/2023/CC184-2302-WX73/08/20230815_288f6dde5b2a45b1ac81d8dd56a29dd0.mp4?AWSAccessKeyId=GYZ95IQQPU27KYGYXLZD&Expires=1724451425&Signature=9IlUlDYJG%2BiUNV%2FxVmlfLTKvWq4%3D)
+
