@@ -55,7 +55,7 @@ with open(json_file, mode='r') as file:
     data = json.load(file)
 
 
-nodos_a_mostrar = 100
+nodos_a_mostrar = 1500
 grafito = nx.Graph()
 i = 0
 for registro in data:

@@ -12,7 +12,7 @@ def generarbinaryList(n):
 csv_file = 'Airline Dataset Updated - v2.csv'
 
 datitos = []
-max_seguidos = 15
+max_seguidos = 5
 
 with open(csv_file, mode='r',errors="ignore") as file:
     csv_reader = csv.DictReader(file)

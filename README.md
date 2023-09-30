@@ -4,7 +4,7 @@
     <img src="./logo_transparent.png" width="200px">
   </a>
 
-  <h1 align="center">Quincaille</h1>
+  <h1 align="center">Quincalla</h1>
 
   <p align="center">
     Peruvian University of Applied Sciences.
