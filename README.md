@@ -119,6 +119,58 @@ La metodologia a emplear en este trabajo sera LEAN UX, dada la intensidad, e ite
 
 * Segun las recomendaciones realizadas por ***Canaval** (**comunicación personal, 15 de agosto de 2023**) usaremos el analisis de tiempos Para poder predecir o validar, comportamientos del programa conforme la cantidad de usuarios crezca. La prediccion se realizara con el metodo formal de conteo y la validacion con el metodo de cronometrado. 
 
+## Aplicacion de lo aprendido 
+
+### Backtracking
+
+```python
+def recomendar_conexiones(self, correo):
+    visitados = set()
+    conexiones_directas = self.buscar_conexiones(correo)
+    recomendaciones = []
+
+    for conexion_directa in conexiones_directas:
+        visitados.add(conexion_directa.correo)  # Agregar el correo a visitados
+        self._recomendar_conexiones_backtracking(conexion_directa, correo, visitados, recomendaciones)
+
+    # Eliminar conexiones directas y el propio usuario de las recomendaciones
+    recomendaciones = [recomendacion for recomendacion in recomendaciones if recomendacion.correo != correo and recomendacion not in conexiones_directas]
+
+    return recomendaciones
+
+def _recomendar_conexiones_backtracking(self, conexion, correo, visitados, recomendaciones):
+    for siguiente_conexion in self.buscar_conexiones(conexion.correo):
+        if siguiente_conexion.correo not in visitados:  # Comprobar el correo en lugar del objeto
+            visitados.add(siguiente_conexion.correo)  # Agregar el correo a visitados
+            self._recomendar_conexiones_backtracking(siguiente_conexion, correo, visitados, recomendaciones)
+            recomendaciones.append(siguiente_conexion)
+            if len(recomendaciones) >= 10:  # Limitar el número de recomendaciones
+                return
+```
+### Divide y venceras 
+
+```python
+def buscar_objetos_por_lista_binaria(self, lista_binaria):
+    def buscar_nodos(nodo_actual, indice):
+        if nodo_actual is None:
+            return []
+
+        objetos_coincidentes = []
+
+        if indice == len(lista_binaria):
+            # Llegamos al final de la lista binaria, incluir todos los objetos del nodo actual
+            objetos_coincidentes.extend(nodo_actual.objetos)
+        else:
+            bit = lista_binaria[indice]
+            if bit == 1:
+                objetos_coincidentes.extend(buscar_nodos(nodo_actual.hijo_izquierdo, indice + 1))
+            objetos_coincidentes.extend(buscar_nodos(nodo_actual.hijo_derecho, indice + 1))
+
+        return objetos_coincidentes
+
+    return buscar_nodos(self.raiz, 0)
+```
+
 ### Bibliografias 
 
 1. Netflix. (2020) *The social Dilema* (Youtube) [Link](https://www.youtube.com/watch?v=uaaC57tcci0)
