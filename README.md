@@ -219,6 +219,8 @@ brindar es calmo e integro, aunque a la vez innovador.
   </a>
     Con un aspecto moderno y minimalista, facil de leer en las pantallas y en concoordancia con los valores de la pagina.    
 
+### Los mockups se encuentran implementados directamente en la aplicacion 
+
 ### Bibliografias 
 
 1. Netflix. (2020) *The social Dilema* (Youtube) [Link](https://www.youtube.com/watch?v=uaaC57tcci0)
