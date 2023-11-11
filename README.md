@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
-    <img src="./logo_transparent.png" width="200px">
+    <img src="./img/logo_transparent.png" width="356">
   </a>
 
   <h1 align="center">Quincalla</h1>
@@ -173,9 +173,34 @@ def buscar_objetos_por_lista_binaria(self, lista_binaria):
 ### Visualizacion
 
  <a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
-    <img src="./foto_grafo.png" width="1200px">
+    <img src="./img/foto_grafo.png" width="1200px">
   </a>
 
+
+## UI Design
+Quincalla busca ser una red social con un verdadero y manifiesto interes por sus usuarios por ello el espacio que busca 
+brindar es calmo e integro, aunque a la vez innovador.
+
+
+### Gana Cromatica
+ <a href="https://github.com/H4RRY73/tf-algorithmic-complexit~~y">
+    <img src="./img/paleta_colores.png" width="1200px">
+  </a>~~
+ *Justificacion*
+<a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+    <img src="./img/psicologia_color.png" width="1200px">
+  </a>
+Profesional, serio, integro, calmo, con un toque de innovacion y vitalidad, incluso  natural y simple.
+
+### Tipografia
+<a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+    <img src="./img/tipografia.png" width="1200px">
+  </a>
+ *Justificacion*
+<a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+    <img src="./img/tipo_justificacion.png" width="1200px">
+  </a>
+    Con un aspecto moderno y minimalista, facil de leer en las pantallas y en concoordancia con los valores de la pagina.    
 
 ### Bibliografias 
 
@@ -193,3 +218,6 @@ def buscar_objetos_por_lista_binaria(self, lista_binaria):
 
 1. Canaval, L. (2023). Sesión de clase - recording_2 - 15/08/2023 10:53:17 (**Blackboard**). [Blackboard](https://upc-download.obs.la-south-2.myhuaweicloud.com/2023/CC184-2302-WX73/08/20230815_288f6dde5b2a45b1ac81d8dd56a29dd0.mp4?AWSAccessKeyId=GYZ95IQQPU27KYGYXLZD&Expires=1724451425&Signature=9IlUlDYJG%2BiUNV%2FxVmlfLTKvWq4%3D)
 
+1. Adobe(2023). Herramienta.  [Link](https://color.adobe.com/es/create/color-wheel)
+1. Atractica(2018). Paleta de color. [Link](https://atractica.com/psicologia-del-color-aplicada-logotipos/)
+1. Paula(2023). Qué fuente tipográfica elegir para tu libro. [Link](https://mibestseller.es/escribir-un-libro/que-fuente-tipografica-elegir/#vs)
