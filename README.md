@@ -122,10 +122,10 @@ La metodologia a emplear en este trabajo sera LEAN UX, dada la intensidad, e ite
 ## Diseño aplicativo
 para este proyecto se espera contar con el uso de ciertos algoritmos para resolver distintos problemas dentro del programa, a continuacion se presentaran estos y su funcion dentro del contexto de una red social.
 
-| Algoritmo          | Función                                                                                               |
+| Algoritmo | Función |
 |---------------------|--------------------------------------------------------------------------------------------------------|
-| Backtracking        | Buscar conexiones indirectas de usuarios para recomendarlos                                           |
-| Divide              | Navegar a través de una lista binaria para localizar usuarios más                                     |
+| Backtracking        | Buscar conexiones indirectas de usuarios para recomendarlos |
+| Divide y venceras   | Navegar a través de una lista binaria para localizar usuarios más |
 
 
 
