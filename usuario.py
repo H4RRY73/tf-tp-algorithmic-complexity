@@ -7,6 +7,7 @@ class Usuario:
         self.edad = edad
         self.genero = genero
         self.intereses = []
+
     def agregar_interes(self, interes):
         # Agregar un interés a la lista (si no está duplicado)
         if interes not in self.intereses:

@@ -8,52 +8,40 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import random
 
+def add_user(e,arbol):
+    temp_user = Usuario (e["correo"], e["contrasena"], e['nombre'], e['apellido'], e["edad"], e["genero"])
+    temp_user.intereses = e["interesesBL"]
+    arbol.agregar_objeto(temp_user,e["interesesBL"])
+    return arbol
+
+
+def load_data(archive, n_users, arbol):
+    with open (archive, mode='r') as file:
+        data = json.load (file)
+    grafito = nx.Graph ()
+
+    for i, e in enumerate(data):
+        if i >= n_users:
+            break
+        arbol = add_user(e,arbol)
+    return arbol
+
+
 app = Flask(__name__)
 app.secret_key = 'clave_secreta'
-
 grafo_usuarios = GrafoUsuarios()
 arbol = ArbolBinario()
+arbol = load_data("persona.json",100, arbol)
 
-usuario1 = Usuario("usuario1@example.com", "contraseña1", "Juan", "Pérez", 30, "Hombre")
-usuario2 = Usuario("usuario2@example.com", "contraseña2", "María", "Gómez", 25, "Mujer")
-usuario3 = Usuario("usuario3@example.com", "contraseña3", "Pedro", "Sánchez", 35, "Hombre")
-usuario4 = Usuario("usuario4@example.com", "contraseña4", "Ana", "Martínez", 28, "Mujer")
 
-# Definir intereses de usuarios
-usuario1.agregar_interes("Deportes")
-usuario1.agregar_interes("Tecnología")
-usuario1.agregar_interes("Ciencia")
 
-usuario2.agregar_interes("Cine")
-usuario2.agregar_interes("Música")
 
-usuario3.agregar_interes("Viajes")
-usuario3.agregar_interes("Gastronomía")
-
-usuario4.agregar_interes("Arte")
-usuario4.agregar_interes("Ciencia")
-
-# Agregar usuarios al grafo
-grafo_usuarios.agregar_usuario(usuario1.correo, usuario1)
-grafo_usuarios.agregar_usuario(usuario2.correo, usuario2)
-grafo_usuarios.agregar_usuario(usuario3.correo, usuario3)
-grafo_usuarios.agregar_usuario(usuario4.correo, usuario4)
-
-# Agregar conexiones entre usuarios
-grafo_usuarios.agregar_conexion(usuario1.correo, usuario2.correo)
-grafo_usuarios.agregar_conexion(usuario2.correo, usuario3.correo)
-grafo_usuarios.agregar_conexion(usuario3.correo, usuario4.correo)
-
-# Agregar usuarios al árbol
-arbol.agregar_objeto(usuario1, usuario1.generar_lista_binaria_intereses())
-arbol.agregar_objeto(usuario2, usuario2.generar_lista_binaria_intereses())
-arbol.agregar_objeto(usuario3, usuario3.generar_lista_binaria_intereses())
-arbol.agregar_objeto(usuario4, usuario4.generar_lista_binaria_intereses())
-
+'''
 json_file = "persona.json"
 with open(json_file, mode='r') as file:
     data = json.load(file)
 
+print(data)
 
 nodos_a_mostrar = 1500
 grafito = nx.Graph()
@@ -63,7 +51,7 @@ for registro in data:
         grafito.add_node(registro['ID'])
         for seguido in registro['seguidosL']:
             grafito.add_edge(registro['ID'], seguido)
-        i+=1
+        i += 1
 
 
 pos = nx.spring_layout(grafito)
@@ -71,7 +59,7 @@ nx.draw(grafito, pos, with_labels=True, node_size=10, font_color="black", font_s
 etiquetas_aristas = nx.get_edge_attributes(grafito, "weight")
 nx.draw_networkx_edge_labels(grafito, pos, edge_labels=etiquetas_aristas)
 plt.show()
-
+'''
 
 
 
