@@ -119,6 +119,17 @@ La metodologia a emplear en este trabajo sera LEAN UX, dada la intensidad, e ite
 
 * Segun las recomendaciones realizadas por ***Canaval** (**comunicación personal, 15 de agosto de 2023**) usaremos el analisis de tiempos Para poder predecir o validar, comportamientos del programa conforme la cantidad de usuarios crezca. La prediccion se realizara con el metodo formal de conteo y la validacion con el metodo de cronometrado. 
 
+## Diseño aplicativo
+para este proyecto se espera contar con el uso de ciertos algoritmos para resolver distintos problemas dentro del programa, a continuacion se presentaran estos y su funcion dentro del contexto de una red social.
+
+| Algoritmo | Función |
+|---------------------|--------------------------------------------------------------------------------------------------------|
+| Backtracking        | Buscar conexiones indirectas de grado 2 por cada usuario para poder recomendarles dichas conexiones |
+| Divide y venceras   | Navegar a través de un arbol binario para ubicar a un grupo de usuarios basandose en una lista binaria propia de cada usuario|
+| UFDS | Poder identificar componentes conexos dentro del grafo de usuarios y contenido con el fin de poder identificar coincidencias y poder recomendarlas |
+| Programacion dianmica| Poder detectar comunidades basandose en intereses similares e incluso conexiones similares aplicando el algoritmo en el grafo de usuarios |
+
+
 ## Aplicacion de lo aprendido 
 
 ### Backtracking
