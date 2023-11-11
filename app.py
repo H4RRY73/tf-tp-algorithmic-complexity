@@ -18,12 +18,12 @@ def add_user(e,arbol):
 def load_data(archive, n_users, arbol):
     with open (archive, mode='r') as file:
         data = json.load (file)
-    grafito = nx.Graph ()
 
     for i, e in enumerate(data):
         if i >= n_users:
             break
         arbol = add_user(e,arbol)
+
     return arbol
 
 
@@ -33,33 +33,6 @@ grafo_usuarios = GrafoUsuarios()
 arbol = ArbolBinario()
 arbol = load_data("persona.json",100, arbol)
 
-
-
-
-'''
-json_file = "persona.json"
-with open(json_file, mode='r') as file:
-    data = json.load(file)
-
-print(data)
-
-nodos_a_mostrar = 1500
-grafito = nx.Graph()
-i = 0
-for registro in data:
-    if(i<nodos_a_mostrar):
-        grafito.add_node(registro['ID'])
-        for seguido in registro['seguidosL']:
-            grafito.add_edge(registro['ID'], seguido)
-        i += 1
-
-
-pos = nx.spring_layout(grafito)
-nx.draw(grafito, pos, with_labels=True, node_size=10, font_color="black", font_size = 1)
-etiquetas_aristas = nx.get_edge_attributes(grafito, "weight")
-nx.draw_networkx_edge_labels(grafito, pos, edge_labels=etiquetas_aristas)
-plt.show()
-'''
 
 
 

@@ -183,7 +183,7 @@ def buscar_objetos_por_lista_binaria(self, lista_binaria):
 ```
 ### Visualizacion
 
- <a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+ <a href="https://github.com/H4RRY73/tf-tp-algorithmic-complexity">
     <img src="./img/foto_grafo.png" width="1200px">
   </a>
 
@@ -194,21 +194,27 @@ brindar es calmo e integro, aunque a la vez innovador.
 
 
 ### Gana Cromatica
- <a href="https://github.com/H4RRY73/tf-algorithmic-complexit~~y">
+ <a href="https://github.com/H4RRY73/tf-tp-algorithmic-complexit~~y">
     <img src="./img/paleta_colores.png" width="1200px">
   </a>~~
- *Justificacion*
-<a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+ 
+*Justificacion*
+<a href="https://github.com/H4RRY73/tf-tp-algorithmic-complexity">
     <img src="./img/psicologia_color.png" width="1200px">
   </a>
-Profesional, serio, integro, calmo, con un toque de innovacion y vitalidad, incluso  natural y simple.
+
+1. **Azul:** Profesional, serio, integro, calmo,
+2. **Naranja:** un toque de innovacion y vitalidad,
+3. **Amarillo:** levemente calido y positvo,
+3. **Marron:** incluso natural y simple.
 
 ### Tipografia
-<a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+<a href="https://github.com/H4RRY73/tf-tp-algorithmic-complexity">
     <img src="./img/tipografia.png" width="1200px">
   </a>
+
  *Justificacion*
-<a href="https://github.com/H4RRY73/tf-algorithmic-complexity">
+<a href="https://github.com/H4RRY73/tf-tp-algorithmic-complexity">
     <img src="./img/tipo_justificacion.png" width="1200px">
   </a>
     Con un aspecto moderno y minimalista, facil de leer en las pantallas y en concoordancia con los valores de la pagina.    
