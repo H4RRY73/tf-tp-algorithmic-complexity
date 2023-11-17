@@ -51,6 +51,14 @@
             </ul>            
             <p>¿Te interesa un usuario? <a href="/recomendaciones">Mandar solicitud</a></p>
         </section>
+        <section>
+            <h2>Seguidores:</h2>
+            <ul>
+                {% for seguidor in seguidores %}
+                    <li>{{ seguidor.nombres }} {{ seguidor.apellidos }}</li>
+                {% endfor %}
+            </ul>
+        </section>  
     </main>
     <footer>
         <p>&copy; 2023 Mi The Social Dilema</p>

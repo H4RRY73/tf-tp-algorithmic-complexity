@@ -99,17 +99,18 @@ def index():
     todas_las_recomendaciones = recomendaciones + coincidencias 
     todas_las_recomendaciones = list(set(todas_las_recomendaciones))
     todas_las_recomendaciones = [recomendacion for recomendacion in todas_las_recomendaciones if recomendacion not in conexiones]
-    
+    global seguidores 
+    seguidores = usuario_verificado.seguidores
     global rec 
     rec = todas_las_recomendaciones
     if usuario_verificado in todas_las_recomendaciones:
      todas_las_recomendaciones.remove(usuario_verificado)
-    return render_template('index.html', user=usuario_verificado, conexiones=conexiones, recomendaciones = todas_las_recomendaciones)
+    return render_template('index.html', user=usuario_verificado, conexiones=conexiones, recomendaciones = todas_las_recomendaciones, seguidores = seguidores)
 
 @app.route('/recomendaciones')
 def mostrar_recomendaciones():    
 
-    return render_template('recomendaciones.html', recomendaciones=rec)
+    return render_template('recomendaciones.html', recomendaciones=rec, seguidores = seguidores)
     
 @app.route('/agregar_conexion/<correo>')
 def agregar_conexion(correo):
