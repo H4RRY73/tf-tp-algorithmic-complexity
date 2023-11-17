@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_recomendaciones.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Recomendaciones</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Volver a Inicio</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Usuarios Recomendados</h2>
+            <ul>
+                {% for recomendacion in recomendaciones %}
+                    <li>
+                        <p>{{ recomendacion.nombres }} {{ recomendacion.apellidos }}</p>
+                        <a href="{{ url_for('agregar_conexion', correo=recomendacion.correo) }}" class="boton-agregar-conexion">Agregar Conexión</a>
+                    </li>                       
+                       
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 TSD</p>
+    </footer>
+</body>
+</html>

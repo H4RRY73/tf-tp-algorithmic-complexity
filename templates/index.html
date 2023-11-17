@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mi Red Social</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_inicio.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a TSD</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Amigos</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Información del Usuario</h2>
+            <p>Correo Electrónico: {{ user.correo }}</p>
+            <p>Nombre: {{ user.nombres }}</p>
+            <p>Apellido: {{ user.apellidos }}</p>
+            <p>Edad: {{ user.edad }}</p>
+            <p>Género: {{ user.genero }}</p>
+            <h2>Intereses:</h2>
+            <ul>
+                {% for interes in user.intereses %}
+                    <li>{{ interes }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h2>Seguidores:</h2>
+            <ul>
+                {% for conexion in conexiones %}
+                    <li>{{ conexion.nombres }} {{ conexion.apellidos }}</li>
+                {% endfor %}
+            </ul>
+        </section>       
+        <section>
+            <h2>Usuarios Recomendados</h2>
+            <ul>
+                {% for recomendacion in recomendaciones %}
+                    <li>{{ recomendacion.nombres }} {{ recomendacion.apellidos }}</li>
+                {% endfor %}
+            </ul>            
+            <p>¿Te interesa un usuario? <a href="/recomendaciones">Mandar solicitud</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi The Social Dilema</p>
+    </footer>
+</body>
+</html>

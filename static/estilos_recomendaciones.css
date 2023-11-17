@@ -1,0 +1,85 @@
+/* estilos_recomendaciones.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff5733;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ff5733;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la lista de usuarios recomendados */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffdbac;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+section ul li h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Estilos del botón Agregar Conexión */
+.boton-agregar-conexion {
+    display: inline-block;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-agregar-conexion:hover {
+    background-color: #ff3c00;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+}
