@@ -12,7 +12,12 @@ class Grafo:
 
     def agregar_arista(self, nodo1, nodo2):
         if nodo1 in self.nodos and nodo2 in self.nodos:
+<<<<<<< HEAD
             self.nodos[nodo1]['vecinos'][nodo2] = True           
+=======
+            self.nodos[nodo1]['vecinos'][nodo2] = True
+            self.nodos[nodo2]['vecinos'][nodo1] = True
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
 
     def obtener_objeto(self, nodo):
         if nodo in self.nodos:

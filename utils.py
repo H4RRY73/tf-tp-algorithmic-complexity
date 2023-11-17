@@ -9,10 +9,15 @@ class GrafoUsuarios:
     def agregar_usuario(self, correo, usuario):
         self.grafo_usuarios.agregar_nodo(correo, usuario)
 
+<<<<<<< HEAD
     def agregar_conexion(self, seguidor, seguido):
         self.grafo_usuarios.agregar_arista(seguidor.correo, seguido.correo)
         seguidor.seguir(seguido)
         
+=======
+    def agregar_conexion(self, correo1, correo2):
+        self.grafo_usuarios.agregar_arista(correo1, correo2)
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
 
     def buscar_usuario_por_correo(self, correo):
         return self.grafo_usuarios.obtener_objeto(correo)
@@ -31,11 +36,16 @@ class GrafoUsuarios:
             self._recomendar_conexiones_backtracking(conexion_directa, correo, visitados, recomendaciones)
 
         # Eliminar conexiones directas y el propio usuario de las recomendaciones
+<<<<<<< HEAD
         recomendaciones=[recomendacion for recomendacion in recomendaciones if recomendacion.correo!=correo and recomendacion not in conexiones_directas]
        
         usuario_verificado = self.buscar_usuario_por_correo(correo)
         recomendaciones.extend(usuario_verificado.seguidores)
 
+=======
+        recomendaciones = [recomendacion for recomendacion in recomendaciones if recomendacion.correo != correo and recomendacion not in conexiones_directas]
+        
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
         return recomendaciones
 
     def _recomendar_conexiones_backtracking(self, conexion, correo, visitados, recomendaciones):
@@ -44,7 +54,11 @@ class GrafoUsuarios:
                 visitados.add(siguiente_conexion.correo)  # Agregar el correo a visitados
                 self._recomendar_conexiones_backtracking(siguiente_conexion, correo, visitados, recomendaciones)
                 recomendaciones.append(siguiente_conexion)
+<<<<<<< HEAD
                 if len(recomendaciones) >= 20:  # Limitar el número de recomendaciones
+=======
+                if len(recomendaciones) >= 10:  # Limitar el número de recomendaciones
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
                     return     
     
     def recomendar_conexiones_con_intereses_similares(self, usuario):

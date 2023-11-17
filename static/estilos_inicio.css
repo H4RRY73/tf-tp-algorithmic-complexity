@@ -7,14 +7,22 @@ body {
 }
 
 header {
+<<<<<<< HEAD
     background-color: #f59c78; /* Color de fondo del encabezado */
+=======
+    background-color: #FF6F61; /* Color de fondo del encabezado */
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav ul {
+<<<<<<< HEAD
     background-color: #f59c78; /* Color de fondo de la barra de navegación */
+=======
+    background-color: #FF6F61; /* Color de fondo de la barra de navegación */
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -55,7 +63,11 @@ ul {
 }
 
 footer {
+<<<<<<< HEAD
     background-color: #f59c78; /* Color de fondo del pie de página */
+=======
+    background-color: #FF6F61; /* Color de fondo del pie de página */
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
     color: white;
     text-align: center;
     padding: 10px;

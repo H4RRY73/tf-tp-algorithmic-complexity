@@ -43,7 +43,11 @@ input[type="password"] {
 }
 
 button[type="submit"] {
+<<<<<<< HEAD
     background-color: #5b68f5;
+=======
+    background-color: #007bff;
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
     color: #fff;
     padding: 10px 20px;
     border: none;

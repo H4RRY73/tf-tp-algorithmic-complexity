@@ -7,7 +7,11 @@ class Usuario:
         self.edad = edad
         self.genero = genero
         self.intereses = []
+<<<<<<< HEAD
         self.seguidores = []
+=======
+
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
     def agregar_interes(self, interes):
         # Agregar un interés a la lista (si no está duplicado)
         if interes not in self.intereses:
@@ -33,6 +37,7 @@ class Usuario:
                 lista_binaria.append(0)
 
         return tuple(lista_binaria)
+<<<<<<< HEAD
     
     def seguir(self, otro_usuario):
         # Seguir a otro usuario y actualizar las listas de seguidores
@@ -44,6 +49,8 @@ class Usuario:
         # Agregar un seguidor a la lista (si no está duplicado)
         if seguidor not in self.seguidores:
             self.seguidores.append(seguidor)
+=======
+>>>>>>> d1dedfdfa909ddce1af983cc2e1bafead110f8f3
 
     def __str__(self):
         return self.correo
