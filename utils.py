@@ -5,14 +5,16 @@ from usuario import Usuario
 class GrafoUsuarios:
     def __init__(self):
         self.grafo_usuarios = Grafo()
+        self.ufds = {}
 
     def agregar_usuario(self, correo, usuario):
         self.grafo_usuarios.agregar_nodo(correo, usuario)
+        self.ufds[correo] = correo
 
     def agregar_conexion(self, seguidor, seguido):
         self.grafo_usuarios.agregar_arista(seguidor.correo, seguido.correo)
         seguidor.seguir(seguido)
-        
+        self.union(seguidor.correo, seguido.correo)        
 
     def buscar_usuario_por_correo(self, correo):
         return self.grafo_usuarios.obtener_objeto(correo)
@@ -68,6 +70,36 @@ class GrafoUsuarios:
         interseccion = intereses1.intersection(intereses2)
         union = intereses1.union(intereses2)
         return len(interseccion) / len(union)
+    
+    def encontrar_representante(self, correo):
+        if correo not in self.ufds:
+            return None  # El usuario no existe en la UFDS
+        path = [correo]
+        while self.ufds[path[-1]] != path[-1]:
+            path.append(self.ufds[path[-1]])
+        for p in path:
+            self.ufds[p] = path[-1]  # Compresión de ruta
+        return path[-1]
+
+    def union(self, usuario1, usuario2):
+        root1 = self.encontrar_representante(usuario1)
+        root2 = self.encontrar_representante(usuario2)
+
+        if root1 != root2:
+            self.ufds[root1] = root2
+
+    def componentes_conexos(self):
+        conjuntos = {}
+        for usuario in self.ufds:
+            representante = self.encontrar_representante(usuario)
+            if representante in conjuntos:
+                conjuntos[representante].append(usuario)
+            else:
+                conjuntos[representante] = [usuario]
+        return list(conjuntos.values())
+    
+
+
 
 class ArbolUsuarios:
      def __init__(self):

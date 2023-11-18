@@ -39,6 +39,7 @@ grafo_usuarios.agregar_usuario(usuario4.correo, usuario4)
 grafo_usuarios.agregar_conexion(usuario1, usuario2)
 grafo_usuarios.agregar_conexion(usuario2, usuario3)
 grafo_usuarios.agregar_conexion(usuario3, usuario4)
+grafo_usuarios.agregar_conexion(usuario4, usuario1)
 
 # Agregar usuarios al árbol
 arbol.agregar_objeto(usuario1, usuario1.generar_lista_binaria_intereses())
@@ -92,7 +93,11 @@ def signin():
 
 @app.route('/index')
 def index():  
-    
+    componentes = grafo_usuarios.componentes_conexos()
+    print("Componentes Conexos:")
+    for i, componente in enumerate(componentes, 1):
+     print(f"Componente {i}: {componente}")
+
     conexiones = grafo_usuarios.buscar_conexiones(usuario_verificado.correo)          
     recomendaciones = grafo_usuarios.recomendar_conexiones(usuario_verificado.correo)     
     coincidencias = arbol.buscar_objetos_por_lista_binaria(usuario_verificado.generar_lista_binaria_intereses())
