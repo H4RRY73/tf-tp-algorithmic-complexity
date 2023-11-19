@@ -2,6 +2,7 @@
 from grafo import Grafo
 from arbol_binario import ArbolBinario
 from usuario import Usuario
+from post import Post
 class GrafoUsuarios:
     def __init__(self):
         self.grafo_usuarios = Grafo()
@@ -98,12 +99,18 @@ class GrafoUsuarios:
                 conjuntos[representante] = [usuario]
         return list(conjuntos.values())
     
-
-
-
 class ArbolUsuarios:
      def __init__(self):
         self.arbol_usuarios = ArbolBinario()
+
+    
+class RedSocialArbol:
+    def __init__(self):
+        self.arbol_binario = ArbolBinario()
+
+    def agregar_post(self, autor, contenido):
+        post = Post(autor, contenido)
+        self.arbol_binario.agregar_objeto(post,post.generar_lista_binaria_intereses())
 
     
 
