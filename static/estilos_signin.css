@@ -1,18 +1,38 @@
 /* Estilos para el formulario de registro */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Fira, sans-serif;
+    background-color: #58B8F5;
     margin: 0;
     padding: 0;
 }
 
+/* Estilo para el encabezado */
+header {
+    font-family: Fira, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #5B67F5;
+    color: #F5B458;
+    padding: 20px 0;
+
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #A38863;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
 .signin-form {
     /* Estilos para el formulario de registro */
     /* Por ejemplo, puedes definir propiedades como color de fondo, márgenes, bordes, etc. */
-    background-color: #f2f2f2;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
+    background-color: #5B67F5;
+    color: #F5B458;
 }
 h1 {
     text-align: center;
@@ -20,12 +40,13 @@ h1 {
 }
 
 form {
-    background-color: #fff;
     width: 300px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #5B67F5;
+    color: #F5B458;
 }
 
 label {
@@ -43,8 +64,8 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-    background-color: #5b68f5;
-    color: #fff;
+    background-color: #A38863;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
@@ -52,7 +73,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #A38863;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 a {
@@ -62,36 +88,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    position: relative;
-    max-width: 320px;
-    width: 100%;
-    margin: 80px auto 30px;
-    border-radius: 8px;
-    background-color: #fff;
-}
-
-.btn_opciones{
-    display: flex;
-    height: 50px;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.btn_opciones .btn_texto{
-    font-size: 17px;
-    font-weight: 400;
-    color: #333;
 }

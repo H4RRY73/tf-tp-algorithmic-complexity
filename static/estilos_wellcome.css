@@ -1,17 +1,20 @@
 /* Estilo para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Fira, sans-serif;
+    background-color: #58B8F5;
     margin: 0;
     padding: 0;
 }
 
 /* Estilo para el encabezado */
 header {
+    font-family: Fira, sans-serif;
+    font-weight: bold;
     text-align: center;
-    background-color: #5b68f5;
-    color: #fff;
+    background-color: #5B67F5;
+    color: #F5B458;
     padding: 20px 0;
+
 }
 
 header img {
@@ -36,7 +39,7 @@ h1 {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #5b68f5;
+    background-color: #A38863;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -51,7 +54,7 @@ h1 {
 /* Estilo para el pie de página */
 footer {
     text-align: center;
-    background-color: #333;
+    background-color: #A38863;
     color: #fff;
     padding: 10px 0;
     font-size: 14px;

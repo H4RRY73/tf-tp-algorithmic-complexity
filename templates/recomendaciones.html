@@ -31,19 +31,6 @@
                 {% endfor %}
             </ul>
         </section>
-        <section>
-            <h2>Seguidores</h2>
-            <ul>
-                {% for seguidor in seguidores %}
-                    <li>
-                        <p>{{ seguidor.nombres }} {{ seguidor.apellidos }}</p>
-                        <a href="{{ url_for('agregar_conexion', correo=seguidor.correo) }}" class="boton-agregar-conexion">Agregar Conexión</a>
-                    </li>                       
-                       
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
     </main>
     
     <footer>

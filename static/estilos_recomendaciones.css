@@ -1,18 +1,32 @@
 /* estilos_recomendaciones.css */
 
 /* Estilos generales */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: Fira, sans-serif;
+    background-color: #58B8F5;
     margin: 0;
     padding: 0;
 }
 
+/* Estilo para el encabezado */
 header {
-    background-color: #ff5733;
-    color: white;
+    font-family: Fira, sans-serif;
+    font-weight: bold;
     text-align: center;
-    padding: 20px;
+    background-color: #5B67F5;
+    color: #F5B458;
+    padding: 20px 0;
+
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #A38863;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
 }
 
 nav ul {
@@ -63,8 +77,8 @@ section ul li h3 {
 /* Estilos del botón Agregar Conexión */
 .boton-agregar-conexion {
     display: inline-block;
-    background-color: #ff5733;
-    color: white;
+    background-color: #A38863;
+    color: #fff;
     text-decoration: none;
     padding: 5px 10px;
     margin-top: 10px;
@@ -73,13 +87,7 @@ section ul li h3 {
 }
 
 .boton-agregar-conexion:hover {
-    background-color: #ff3c00;
+    background-color: #A38863;
+    color: #fff;
 }
 
-/* Estilos del pie de página */
-footer {
-    text-align: center;
-    background-color: #ff5733;
-    color: white;
-    padding: 10px;
-}

@@ -5,7 +5,12 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <img src="{{ url_for('static', filename='logo_transparent.png') }}" alt="Logo de la Red Social">
+
+    </header>
+    <main>
+         <div class="container">
         <h1>Login</h1>
         {% if error %}
         <p class="error">{{ error }}</p>
@@ -23,5 +28,10 @@
         </form>
         <p>¿No tienes una cuenta? <a href="/signin">Regístrate aquí</a></p>
     </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Quincalla</p>
+    </footer>
+
 </body>
 </html>

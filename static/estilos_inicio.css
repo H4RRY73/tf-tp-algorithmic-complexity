@@ -1,20 +1,29 @@
 /* Estilos para la página principal */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FED8B1; /* Color de fondo cálido */
+.body {
+    font-family: Fira, sans-serif;
+    background-color: #58B8F5; /* Color de fondo cálido */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #f59c78; /* Color de fondo del encabezado */
-    color: white;
+    background-color: #5B67F5; /* Color de fondo del encabezado */
+    color: #F5B458;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #A38863;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
 nav ul {
-    background-color: #f59c78; /* Color de fondo de la barra de navegación */
+    background-color: #A38863; /* Color de fondo de la barra de navegación */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,10 +47,13 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    background-color: #58B8F5;
+
 }
 
 section {
-    background-color: #FFD700; /* Color de fondo de las secciones */
+    background-color: #5B67F5; /* Color de fondo de las secciones */
+    color: #F5B458;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -55,8 +67,9 @@ ul {
 }
 
 footer {
-    background-color: #f59c78; /* Color de fondo del pie de página */
-    color: white;
     text-align: center;
-    padding: 10px;
+    background-color: #A38863;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
 }
