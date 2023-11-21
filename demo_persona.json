@@ -1,0 +1,455 @@
+[
+    {
+        "ID": 0,
+        "nombre": "Edithe",
+        "apellido": "Leggis",
+        "genero": "Female",
+        "edad": "62",
+        "correo": "Edithe_Leggis62@gmail.com",
+        "contrasena": "233236733728",
+        "intereses": [
+            "Videojuegos",
+            "Cine",
+            "Gastronomia"
+        ],
+        "seguidosL": [],
+        "seguidores": []
+    },
+    {
+        "ID": 1,
+        "nombre": "Elwood",
+        "apellido": "Catt",
+        "genero": "Male",
+        "edad": "62",
+        "correo": "Elwood_Catt62@gmail.com",
+        "contrasena": "447693194731",
+        "intereses": [
+            "Moda",
+            "Cine",
+            "Tecnologia",
+            "Musica",
+            "Gastronomia",
+            "Videojuegos",
+            "Ciencia",
+            "Literatura",
+            "Arte",
+            "Viajes",
+            "Deportes"
+        ],
+        "seguidosL": [
+            0
+        ],
+        "seguidores": [
+            0
+        ]
+    },
+    {
+        "ID": 2,
+        "nombre": "Darby",
+        "apellido": "Felgate",
+        "genero": "Male",
+        "edad": "67",
+        "correo": "Darby_Felgate67@gmail.com",
+        "contrasena": "748903184728",
+        "intereses": [
+            "Musica",
+            "Ciencia",
+            "Moda"
+        ],
+        "seguidosL": [
+            1
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 3,
+        "nombre": "Dominica",
+        "apellido": "Pyle",
+        "genero": "Female",
+        "edad": "71",
+        "correo": "Dominica_Pyle71@gmail.com",
+        "contrasena": "968446578751",
+        "intereses": [
+            "Ciencia",
+            "Moda",
+            "Musica",
+            "Gastronomia"
+        ],
+        "seguidosL": [
+            2,
+            0,
+            1
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 4,
+        "nombre": "Bay",
+        "apellido": "Pencost",
+        "genero": "Male",
+        "edad": "21",
+        "correo": "Bay_Pencost21@gmail.com",
+        "contrasena": "399120380199",
+        "intereses": [
+            "Ciencia",
+            "Cine",
+            "Deportes"
+        ],
+        "seguidosL": [],
+        "seguidores": [
+            3,
+            1,
+            0,
+            2
+        ]
+    },
+    {
+        "ID": 5,
+        "nombre": "Lora",
+        "apellido": "Durbann",
+        "genero": "Female",
+        "edad": "55",
+        "correo": "Lora_Durbann55@gmail.com",
+        "contrasena": "716660434084",
+        "intereses": [
+            "Ciencia",
+            "Literatura"
+        ],
+        "seguidosL": [
+            1
+        ],
+        "seguidores": [
+            1,
+            4,
+            2
+        ]
+    },
+    {
+        "ID": 6,
+        "nombre": "Rand",
+        "apellido": "Bram",
+        "genero": "Male",
+        "edad": "73",
+        "correo": "Rand_Bram73@gmail.com",
+        "contrasena": "355449175416",
+        "intereses": [
+            "Viajes",
+            "Arte",
+            "Ciencia",
+            "Gastronomia"
+        ],
+        "seguidosL": [
+            2,
+            5,
+            4
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 7,
+        "nombre": "Perceval",
+        "apellido": "Dallosso",
+        "genero": "Male",
+        "edad": "36",
+        "correo": "Perceval_Dallosso36@gmail.com",
+        "contrasena": "920574186898",
+        "intereses": [
+            "Arte",
+            "Musica",
+            "Deportes",
+            "Ciencia"
+        ],
+        "seguidosL": [
+            5,
+            0,
+            3,
+            1
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 8,
+        "nombre": "Aleda",
+        "apellido": "Pigram",
+        "genero": "Female",
+        "edad": "35",
+        "correo": "Aleda_Pigram35@gmail.com",
+        "contrasena": "908951375366",
+        "intereses": [
+            "Arte",
+            "Musica",
+            "Deportes",
+            "Viajes"
+        ],
+        "seguidosL": [
+            3,
+            4,
+            6,
+            7
+        ],
+        "seguidores": [
+            5
+        ]
+    },
+    {
+        "ID": 9,
+        "nombre": "Burlie",
+        "apellido": "Schustl",
+        "genero": "Male",
+        "edad": "13",
+        "correo": "Burlie_Schustl13@gmail.com",
+        "contrasena": "775077289830",
+        "intereses": [
+            "Videojuegos",
+            "Deportes",
+            "Cine"
+        ],
+        "seguidosL": [
+            2,
+            0,
+            6
+        ],
+        "seguidores": [
+            1,
+            7,
+            3,
+            0,
+            8
+        ]
+    },
+    {
+        "ID": 10,
+        "nombre": "Porty",
+        "apellido": "Jori",
+        "genero": "Male",
+        "edad": "39",
+        "correo": "Porty_Jori39@gmail.com",
+        "contrasena": "518827827331",
+        "intereses": [
+            "Tecnologia",
+            "Deportes",
+            "Cine"
+        ],
+        "seguidosL": [
+            1,
+            5
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 11,
+        "nombre": "Briant",
+        "apellido": "De La Haye",
+        "genero": "Male",
+        "edad": "71",
+        "correo": "Briant_De La Haye71@gmail.com",
+        "contrasena": "997738461436",
+        "intereses": [
+            "Deportes",
+            "Musica",
+            "Videojuegos",
+            "Ciencia"
+        ],
+        "seguidosL": [
+            6
+        ],
+        "seguidores": [
+            3,
+            10,
+            1,
+            6
+        ]
+    },
+    {
+        "ID": 12,
+        "nombre": "Kalie",
+        "apellido": "Scoble",
+        "genero": "Female",
+        "edad": "47",
+        "correo": "Kalie_Scoble47@gmail.com",
+        "contrasena": "530386849611",
+        "intereses": [
+            "Videojuegos",
+            "Deportes",
+            "Gastronomia"
+        ],
+        "seguidosL": [
+            4,
+            7,
+            6,
+            9,
+            1
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 13,
+        "nombre": "Catriona",
+        "apellido": "Beaument",
+        "genero": "Female",
+        "edad": "77",
+        "correo": "Catriona_Beaument77@gmail.com",
+        "contrasena": "960437791028",
+        "intereses": [
+            "Arte",
+            "Musica",
+            "Gastronomia"
+        ],
+        "seguidosL": [
+            9
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 14,
+        "nombre": "Amberly",
+        "apellido": "Handling",
+        "genero": "Female",
+        "edad": "32",
+        "correo": "Amberly_Handling32@gmail.com",
+        "contrasena": "908825406243",
+        "intereses": [
+            "Tecnologia",
+            "Arte",
+            "Moda"
+        ],
+        "seguidosL": [
+            10,
+            6,
+            12,
+            7
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 15,
+        "nombre": "Dyna",
+        "apellido": "De'Vere - Hunt",
+        "genero": "Female",
+        "edad": "22",
+        "correo": "Dyna_De'Vere - Hunt22@gmail.com",
+        "contrasena": "105514145218",
+        "intereses": [
+            "Musica",
+            "Moda",
+            "Arte",
+            "Ciencia",
+            "Viajes",
+            "Deportes",
+            "Literatura",
+            "Tecnologia",
+            "Gastronomia",
+            "Cine"
+        ],
+        "seguidosL": [
+            10,
+            7,
+            11,
+            13
+        ],
+        "seguidores": []
+    },
+    {
+        "ID": 16,
+        "nombre": "Janella",
+        "apellido": "Hardaker",
+        "genero": "Female",
+        "edad": "28",
+        "correo": "Janella_Hardaker28@gmail.com",
+        "contrasena": "27055050619",
+        "intereses": [
+            "Musica",
+            "Deportes",
+            "Cine",
+            "Gastronomia"
+        ],
+        "seguidosL": [
+            4,
+            10,
+            14,
+            13,
+            3
+        ],
+        "seguidores": [
+            10,
+            14,
+            0,
+            13,
+            6
+        ]
+    },
+    {
+        "ID": 17,
+        "nombre": "Alvin",
+        "apellido": "Wenzel",
+        "genero": "Male",
+        "edad": "12",
+        "correo": "Alvin_Wenzel12@gmail.com",
+        "contrasena": "899989406483",
+        "intereses": [
+            "Arte",
+            "Videojuegos",
+            "Moda",
+            "Viajes"
+        ],
+        "seguidosL": [
+            5,
+            6,
+            1
+        ],
+        "seguidores": [
+            9,
+            6
+        ]
+    },
+    {
+        "ID": 18,
+        "nombre": "Jerrine",
+        "apellido": "Peeters",
+        "genero": "Female",
+        "edad": "87",
+        "correo": "Jerrine_Peeters87@gmail.com",
+        "contrasena": "852025325605",
+        "intereses": [
+            "Moda",
+            "Literatura",
+            "Videojuegos",
+            "Musica"
+        ],
+        "seguidosL": [
+            0,
+            16,
+            9
+        ],
+        "seguidores": [
+            6,
+            15,
+            8,
+            16,
+            10
+        ]
+    },
+    {
+        "ID": 19,
+        "nombre": "Warner",
+        "apellido": "Driutti",
+        "genero": "Male",
+        "edad": "62",
+        "correo": "Warner_Driutti62@gmail.com",
+        "contrasena": "746302389081",
+        "intereses": [
+            "Ciencia",
+            "Tecnologia",
+            "Moda",
+            "Literatura"
+        ],
+        "seguidosL": [],
+        "seguidores": [
+            6,
+            4,
+            7,
+            9,
+            16
+        ]
+    }
+]
