@@ -10,6 +10,7 @@ csv_file = 'Airline Dataset Updated - v2.csv'
 
 datitos = []
 max_seguidos = 5
+max_seguidores = 5
 
 def generar_intereses():
     n = random.randint(1, len(intereses))
@@ -32,6 +33,8 @@ with open(csv_file, mode='r',errors="ignore") as file:
         n_seguidos = random.randint(0, min(ID, max_seguidos)) # limitador para cantidad de seguidos
         lista_seguidos = random.sample(range(ID), n_seguidos) # escoge un aleatorio entre los registros ya creados
         a['seguidosL'] = lista_seguidos
+        n_seguidos = random.randint (0, min (ID, max_seguidos))
+        a['seguidoresL'] = random.sample(range(ID),n_seguidos)
         datitos.append(a)
         ID += 1
     print('se han generado {} registros'.format(ID))
