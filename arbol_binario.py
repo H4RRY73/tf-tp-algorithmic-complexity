@@ -34,14 +34,15 @@ class ArbolBinario:
             objetos_coincidentes = []
 
             if indice == len(lista_binaria):
-                # Llegamos al final de la lista binaria, incluir todos los objetos del nodo actual
-                objetos_coincidentes.extend(nodo_actual.objetos)
+                # Llegamos al final de la lista binaria, incluir hasta 10 objetos del nodo actual
+                objetos_coincidentes.extend(nodo_actual.objetos[:5])
             else:
                 bit = lista_binaria[indice]
                 if bit == 1:
                     objetos_coincidentes.extend(buscar_nodos(nodo_actual.hijo_izquierdo, indice + 1))
                 objetos_coincidentes.extend(buscar_nodos(nodo_actual.hijo_derecho, indice + 1))
 
-            return objetos_coincidentes
+            # Limitar la cantidad total de objetos a 10
+            return objetos_coincidentes[:10]
 
         return buscar_nodos(self.raiz, 0)

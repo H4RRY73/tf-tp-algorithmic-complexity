@@ -47,7 +47,7 @@ class GrafoUsuarios:
                 visitados.add(siguiente_conexion.correo)  # Agregar el correo a visitados
                 self._recomendar_conexiones_backtracking(siguiente_conexion, correo, visitados, recomendaciones)
                 recomendaciones.append(siguiente_conexion)
-                if len(recomendaciones) >= 20:  # Limitar el número de recomendaciones
+                if len(recomendaciones) >= 10:  # Limitar el número de recomendaciones
                     return     
     
     def recomendar_conexiones_con_intereses_similares(self, usuario):

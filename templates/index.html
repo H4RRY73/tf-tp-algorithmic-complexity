@@ -8,15 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenido a TSD</h1>
+        <h1>Bienvenido a Quincalla</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Crear Publicacion</a></li>
             <li><a href="#">Amigos</a></li>
-            <li><a href="#">Cerrar Sesión</a></li>
+            <li><a href="/">Cerrar Sesión</a></li>
         </ul>
     </nav>
     <main>
@@ -35,7 +35,7 @@
             </ul>
         </section>
         <section>
-            <h2>Seguidores:</h2>
+            <h2>Personas que sigues:</h2>
             <ul>
                 {% for conexion in conexiones %}
                     <li>{{ conexion.nombres }} {{ conexion.apellidos }}</li>
@@ -51,6 +51,14 @@
             </ul>            
             <p>¿Te interesa un usuario? <a href="/recomendaciones">Mandar solicitud</a></p>
         </section>
+        <section>
+            <h2>Seguidores:</h2>
+            <ul>
+                {% for seguidor in seguidores %}
+                    <li>{{ seguidor.nombres }} {{ seguidor.apellidos }}</li>
+                {% endfor %}
+            </ul>
+        </section>  
     </main>
     <footer>
         <p>&copy; 2023 Mi The Social Dilema</p>
