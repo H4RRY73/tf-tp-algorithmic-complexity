@@ -181,6 +181,36 @@ def buscar_objetos_por_lista_binaria(self, lista_binaria):
 
     return buscar_nodos(self.raiz, 0)
 ```
+### UFDS
+
+```python
+def encontrar_representante(self, correo):
+        if correo not in self.ufds:
+            return None  # El usuario no existe en la UFDS
+        path = [correo]
+        while self.ufds[path[-1]] != path[-1]:
+            path.append(self.ufds[path[-1]])
+        for p in path:
+            self.ufds[p] = path[-1]  # Compresión de ruta
+        return path[-1]
+
+    def union(self, usuario1, usuario2):
+        root1 = self.encontrar_representante(usuario1)
+        root2 = self.encontrar_representante(usuario2)
+
+        if root1 != root2:
+            self.ufds[root1] = root2
+
+    def componentes_conexos(self):
+        conjuntos = {}
+        for usuario in self.ufds:
+            representante = self.encontrar_representante(usuario)
+            if representante in conjuntos:
+                conjuntos[representante].append(usuario)
+            else:
+                conjuntos[representante] = [usuario]
+        return list(conjuntos.values())
+```
 ### Visualizacion
 
  <a href="https://github.com/H4RRY73/tf-tp-algorithmic-complexity">
