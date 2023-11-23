@@ -127,7 +127,7 @@ para este proyecto se espera contar con el uso de ciertos algoritmos para resolv
 | Backtracking        | Buscar conexiones indirectas de grado 2 por cada usuario para poder recomendarles dichas conexiones |
 | Divide y venceras   | Navegar a través de un arbol binario para ubicar a un grupo de usuarios basandose en una lista binaria propia de cada usuario|
 | UFDS | Poder identificar componentes conexos dentro del grafo de usuarios y contenido con el fin de poder identificar coincidencias y poder recomendarlas |
-| Programacion dianmica| Poder detectar comunidades basandose en intereses similares e incluso conexiones similares aplicando el algoritmo en el grafo de usuarios |
+
 
 
 ## Aplicacion de lo aprendido 
