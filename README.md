@@ -16,11 +16,11 @@
 </div>
 
 **_Integrantes_**
-| Apellidos y Nombres | Codigo |
-| ------------- | ------------- |
-| Cervantes Erequita  | U202110140  |
-| Mayta Lopez Harold Jaime | U202114851  |
-| Vilchez Marin Rody Sebastian | U202112321 |
+| Apellidos y Nombres | Codigo |User|
+| ------------- | ------------- |----------|
+| Cervantes Erequita  | U202110140  | KiwiAmenzante |
+| Mayta Lopez Harold Jaime | U202114851  | H4RRY73 |
+| Vilchez Marin Rody Sebastian | U202216562 | R0SEWT |
 
 ## Descripcion del problema
 ### Contextualizacion
